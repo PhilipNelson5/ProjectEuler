@@ -30,4 +30,5 @@
 
 # Vim
 *.swp
+*.swo
 *.un~
