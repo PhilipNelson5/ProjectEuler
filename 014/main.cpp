@@ -38,9 +38,13 @@ int main()
 	SIZE-=1;
 	*/
 
+	int ct = 0;
 	for(int i = SIZE; i > 1; --i)
 		if(size[i] == 0)
+		{
 			collatz(i);
+			++ct;
+		}
 
 	int max = 0;
 	int loc = 0;
@@ -55,6 +59,7 @@ int main()
 		//std::cout << i << ": " << size[i] << std::endl;
 	}
 
+	std::cout << "count: " << ct << std::endl;
 	std::cout << loc << " " << max << std::endl;
 	//std::cout << sequence(loc) << std::endl;
 }
