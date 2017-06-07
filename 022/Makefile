@@ -9,3 +9,9 @@ debug: $(OBJS)
 
 release: $(OBJS)
 	$(CC) $(RELEASE_FLAGS) $(FLAGS) $(OBJS) -o release
+
+all:
+	make debug release
+
+clean:
+	rm debug release
